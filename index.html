@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cotswold House Co. — British Interior Design, Greenville SC</title>
+<meta name="description" content="Cotswold House Co. brings classic British interior design and curated English decor to Greenville, SC. Interior design, staging, and rare finds from the Cotswolds.">
+<meta property="og:title" content="Cotswold House Co. — British Interior Design, Greenville SC">
+<meta property="og:description" content="Classic British interior design and curated English decor, brought to the Upstate.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{
+--cream:#F7F5F0;--warm:#EDE8DF;--stone:#D4CFC6;--grey:#9A958C;--charcoal:#3A3833;--black:#1A1917;
+--white:#FFFFFF;
+--serif:'Cormorant Garamond',Georgia,'Times New Roman',serif;
+--sans:'Jost','Helvetica Neue',Helvetica,sans-serif;
+}
+html{scroll-behavior:smooth;font-size:16px}
+body{font-family:var(--sans);color:var(--black);background:var(--cream);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+img{max-width:100%;display:block}
+::selection{background:var(--stone);color:var(--black)}
+nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:28px 48px;display:flex;justify-content:space-between;align-items:center;background:rgba(247,245,240,0.92);backdrop-filter:blur(20px);border-bottom:1px solid rgba(0,0,0,0.04);transition:all 0.4s ease}
+nav.scrolled{padding:18px 48px;background:rgba(247,245,240,0.97)}
+.nav-left,.nav-right{display:flex;gap:32px;align-items:center}
+.nav-link{font-family:var(--sans);font-size:11px;font-weight:400;letter-spacing:0.18em;text-transform:uppercase;color:var(--charcoal);transition:color 0.3s;cursor:pointer}
+.nav-link:hover{color:var(--grey)}
+.nav-logo{font-family:var(--serif);font-size:18px;font-weight:400;letter-spacing:0.06em;color:var(--black);position:absolute;left:50%;transform:translateX(-50%)}
+.hero{min-height:100vh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:140px 48px 100px;position:relative}
+.hero-eyebrow{font-family:var(--sans);font-size:10px;letter-spacing:0.3em;text-transform:uppercase;color:var(--grey);margin-bottom:32px;font-weight:400}
+.hero h1{font-family:var(--serif);font-size:clamp(42px,7vw,86px);font-weight:300;line-height:1.05;letter-spacing:-0.01em;color:var(--black);max-width:800px;margin:0 auto}
+.hero h1 em{font-style:italic;font-weight:300;color:var(--grey)}
+.hero-sub{font-family:var(--sans);font-size:14px;font-weight:300;color:var(--grey);margin-top:36px;letter-spacing:0.04em;line-height:1.8;max-width:480px}
+.hero-line{width:1px;height:80px;background:var(--stone);margin:48px auto 0;opacity:0.5}
+.hero-scroll{font-size:9px;letter-spacing:0.25em;text-transform:uppercase;color:var(--stone);margin-top:16px;font-weight:400}
+section{padding:120px 48px}
+.section-grid{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center}
+.section-grid.reverse .section-text{order:2}
+.section-grid.reverse .section-image{order:1}
+.section-eyebrow{font-family:var(--sans);font-size:10px;letter-spacing:0.25em;text-transform:uppercase;color:var(--grey);margin-bottom:20px;font-weight:400}
+.section-title{font-family:var(--serif);font-size:clamp(32px,4vw,52px);font-weight:300;line-height:1.1;letter-spacing:-0.01em;color:var(--black);margin-bottom:24px}
+.section-body{font-family:var(--sans);font-size:14px;font-weight:300;line-height:1.9;color:var(--charcoal);max-width:440px}
+.section-body p+p{margin-top:16px}
+.section-link{display:inline-block;margin-top:28px;font-family:var(--sans);font-size:10px;letter-spacing:0.2em;text-transform:uppercase;color:var(--black);border-bottom:1px solid var(--black);padding-bottom:2px;transition:all 0.3s}
+.section-link:hover{color:var(--grey);border-color:var(--grey)}
+.img-placeholder{width:100%;aspect-ratio:4/5;background:var(--warm);border-radius:2px;position:relative;overflow:hidden}
+.img-placeholder::after{content:'';position:absolute;inset:0;background:linear-gradient(135deg,transparent 40%,rgba(255,255,255,0.15) 50%,transparent 60%)}
+.img-placeholder.landscape{aspect-ratio:3/2}
+.img-placeholder.square{aspect-ratio:1/1}
+.img-label{position:absolute;bottom:20px;left:20px;font-family:var(--sans);font-size:9px;letter-spacing:0.2em;text-transform:uppercase;color:var(--grey)}
+.story-band{background:var(--black);color:var(--cream);padding:140px 48px;text-align:center}
+.story-band .section-eyebrow{color:var(--grey)}
+.story-band h2{font-family:var(--serif);font-size:clamp(28px,3.5vw,44px);font-weight:300;line-height:1.4;max-width:680px;margin:0 auto 32px;letter-spacing:0.01em}
+.story-band p{font-family:var(--sans);font-size:14px;font-weight:300;line-height:1.9;color:var(--grey);max-width:520px;margin:0 auto}
+.services{background:var(--white);padding:120px 48px}
+.services-header{text-align:center;max-width:600px;margin:0 auto 80px}
+.services-grid{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:repeat(4,1fr);gap:40px}
+.service-card{text-align:center;padding:48px 24px;border:1px solid rgba(0,0,0,0.06);transition:all 0.4s ease;cursor:pointer}
+.service-card:hover{border-color:var(--stone);background:var(--cream)}
+.service-num{font-family:var(--serif);font-size:32px;font-weight:300;color:var(--stone);margin-bottom:20px;font-style:italic}
+.service-name{font-family:var(--serif);font-size:22px;font-weight:400;letter-spacing:0.02em;color:var(--black);margin-bottom:16px}
+.service-desc{font-family:var(--sans);font-size:13px;font-weight:300;line-height:1.8;color:var(--grey)}
+.bibury-band{padding:120px 48px;background:var(--cream)}
+.bibury-inner{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center}
+.bibury-images{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.panels{padding:0 48px 120px;background:var(--cream)}
+.panels-grid{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:repeat(4,1fr);gap:24px}
+.panel{position:relative;overflow:hidden;cursor:pointer}
+.panel .img-placeholder{aspect-ratio:3/4}
+.panel-overlay{position:absolute;bottom:0;left:0;right:0;padding:32px 24px;background:linear-gradient(transparent,rgba(26,25,23,0.7))}
+.panel-title{font-family:var(--serif);font-size:20px;font-weight:400;color:var(--white);margin-bottom:4px}
+.panel-sub{font-family:var(--sans);font-size:10px;letter-spacing:0.15em;text-transform:uppercase;color:rgba(255,255,255,0.6);font-weight:300}
+.contact{background:var(--white);padding:120px 48px}
+.contact-inner{max-width:800px;margin:0 auto;text-align:center}
+.contact-inner h2{font-family:var(--serif);font-size:clamp(32px,4vw,48px);font-weight:300;margin-bottom:24px}
+.contact-inner p{font-family:var(--sans);font-size:14px;font-weight:300;line-height:1.9;color:var(--grey);max-width:500px;margin:0 auto 40px}
+.contact-email{font-family:var(--serif);font-size:24px;font-weight:400;font-style:italic;color:var(--black);border-bottom:1px solid var(--stone);padding-bottom:4px;transition:all 0.3s}
+.contact-email:hover{color:var(--grey);border-color:var(--grey)}
+.contact-details{margin-top:48px;display:flex;justify-content:center;gap:48px}
+.contact-detail{text-align:center}
+.contact-detail-label{font-family:var(--sans);font-size:9px;letter-spacing:0.2em;text-transform:uppercase;color:var(--stone);margin-bottom:6px}
+.contact-detail-value{font-family:var(--sans);font-size:13px;font-weight:300;color:var(--charcoal)}
+footer{background:var(--black);color:var(--cream);padding:60px 48px}
+.footer-inner{max-width:1200px;margin:0 auto;display:flex;justify-content:space-between;align-items:center}
+.footer-logo{font-family:var(--serif);font-size:16px;font-weight:400;letter-spacing:0.06em}
+.footer-links{display:flex;gap:28px}
+.footer-link{font-family:var(--sans);font-size:10px;letter-spacing:0.15em;text-transform:uppercase;color:var(--grey);transition:color 0.3s}
+.footer-link:hover{color:var(--cream)}
+.footer-copy{font-family:var(--sans);font-size:10px;color:var(--grey);letter-spacing:0.05em}
+@keyframes fadeUp{from{opacity:0;transform:translateY(30px)}to{opacity:1;transform:translateY(0)}}
+.fade-in{opacity:0;transform:translateY(30px);transition:all 0.8s cubic-bezier(0.22,1,0.36,1)}
+.fade-in.visible{opacity:1;transform:translateY(0)}
+@media(max-width:900px){
+nav{padding:20px 24px}
+nav.scrolled{padding:16px 24px}
+.nav-left,.nav-right{gap:16px}
+.nav-link{font-size:9px;letter-spacing:0.12em}
+section{padding:80px 24px}
+.section-grid{grid-template-columns:1fr;gap:48px}
+.section-grid.reverse .section-text{order:1}
+.section-grid.reverse .section-image{order:2}
+.services-grid{grid-template-columns:1fr 1fr;gap:20px}
+.panels-grid{grid-template-columns:1fr 1fr;gap:16px}
+.hero{padding:120px 24px 80px}
+.story-band{padding:80px 24px}
+.bibury-inner{grid-template-columns:1fr}
+.contact-details{flex-direction:column;gap:24px}
+.footer-inner{flex-direction:column;gap:24px;text-align:center}
+}
+@media(max-width:600px){
+.services-grid{grid-template-columns:1fr}
+.panels-grid{grid-template-columns:1fr}
+.nav-left{display:none}
+}
+</style>
+</head>
+<body>
+<nav id="nav">
+<div class="nav-left">
+<a href="#design" class="nav-link">Interior Design</a>
+<a href="#decor" class="nav-link">Decor</a>
+<a href="#staging" class="nav-link">Staging</a>
+<a href="#rare" class="nav-link">Rare Finds</a>
+<a href="#contact" class="nav-link">Contact</a>
+</div>
+<a href="#" class="nav-logo">Cotswold House Co.</a>
+<div class="nav-right">
+<a href="#" class="nav-link">Instagram</a>
+<a href="#" class="nav-link">Shop Online</a>
+</div>
+</nav>
+<section class="hero">
+<div class="hero-eyebrow">Greenville, South Carolina</div>
+<h1>A little bit of<br><em>old England,</em><br>built locally.</h1>
+<p class="hero-sub">Classic British interior design and curated English decor, brought to the Upstate. Hand-selected pieces that tell a story.</p>
+<div class="hero-line"></div>
+<div class="hero-scroll">Scroll to discover</div>
+</section>
+<div class="story-band">
+<div class="section-eyebrow">Our Story</div>
+<h2>Cotswold House Co. is bringing classic British decor to North America. It's more about curated pieces and rare finds that tell a story, rather than run of the mill.</h2>
+<p>Everything is hand-selected and picked with purpose in mind. Born from the rolling hills of the Cotswolds, now rooted in Greenville, South Carolina.</p>
+</div>
+<section id="design">
+<div class="section-grid">
+<div class="section-image fade-in">
+<div class="img-placeholder"><span class="img-label">Interior styling</span></div>
+</div>
+<div class="section-text fade-in">
+<div class="section-eyebrow">Interior Design</div>
+<h2 class="section-title">Vision, purpose<br>and elegance.</h2>
+<div class="section-body">
+<p>Whether it's a room refresh, renovation or new 8,000 sq ft custom home build, we provide highly curated interior design services.</p>
+<p>Our ethos is the detail. Creating a home that's full of vision, purpose and elegance — where every piece has been considered and every corner tells a story.</p>
+</div>
+<a href="#contact" class="section-link">Start a conversation →</a>
+</div>
+</div>
+</section>
+<section id="decor" style="background:var(--white)">
+<div class="section-grid reverse">
+<div class="section-text fade-in">
+<div class="section-eyebrow">Decor</div>
+<h2 class="section-title">A piece of<br><em>England,</em> here.</h2>
+<div class="section-body">
+<p>We hand-select items from the Cotswolds and across England, bringing back a piece of England to North America.</p>
+<p>From antique finds to artisan homewares — each piece is chosen for its character, its craft, and its ability to transform a space.</p>
+</div>
+<a href="#" class="section-link">Browse the collection →</a>
+</div>
+<div class="section-image fade-in">
+<div class="img-placeholder" style="background:var(--warm)"><span class="img-label">Curated from England</span></div>
+</div>
+</div>
+</section>
+<section id="staging">
+<div class="section-grid">
+<div class="section-image fade-in">
+<div class="img-placeholder landscape" style="background:var(--stone)"><span class="img-label">Residential staging</span></div>
+</div>
+<div class="section-text fade-in">
+<div class="section-eyebrow">Staging</div>
+<h2 class="section-title">Curated spaces<br>for lasting<br>impressions.</h2>
+<div class="section-body">
+<p>We offer a curated selection of decor and soft furnishings for residential real estate and curated events.</p>
+<p>Staging that feels lived-in, considered, and effortlessly beautiful — never overdone, always purposeful.</p>
+</div>
+<a href="#contact" class="section-link">Enquire about staging →</a>
+</div>
+</div>
+</section>
+<section id="rare" style="background:var(--white)">
+<div class="section-grid reverse">
+<div class="section-text fade-in">
+<div class="section-eyebrow">Rare Finds</div>
+<h2 class="section-title">Something<br>specific in mind?</h2>
+<div class="section-body">
+<p>We take special requests. If you're looking for something specific — a particular period, style, or provenance — tell us and we will do our best to find it.</p>
+<p>From Georgian silverware to Cotswold stone garden pieces, we source directly from England with care and expertise.</p>
+</div>
+<a href="#contact" class="section-link">Make a request →</a>
+</div>
+<div class="section-image fade-in">
+<div class="img-placeholder" style="background:var(--warm)"><span class="img-label">Sourced with care</span></div>
+</div>
+</div>
+</section>
+<section class="bibury-band">
+<div class="bibury-inner">
+<div class="fade-in">
+<div class="section-eyebrow">The Cotswolds</div>
+<h2 class="section-title">The Swans<br>of Bibury.</h2>
+<div class="section-body">
+<p>Bibury — described by William Morris as "the most beautiful village in England." It's where our story begins.</p>
+<p>The honey-stone cottages of Arlington Row, the River Coln winding through the village, and the swans that glide across its waters. This is the world that shapes our eye, our taste, and everything we bring to Greenville.</p>
+</div>
+</div>
+<div class="bibury-images fade-in">
+<div class="img-placeholder square" style="background:var(--stone)"><span class="img-label">Arlington Row</span></div>
+<div class="img-placeholder square" style="background:var(--warm)"><span class="img-label">Bibury, Gloucestershire</span></div>
+</div>
+</div>
+</section>
+<div class="panels">
+<div class="panels-grid">
+<div class="panel fade-in"><div class="img-placeholder" style="background:#C8C1B5"><div class="panel-overlay"><div class="panel-title">Interior Design</div><div class="panel-sub">Bespoke spaces</div></div></div></div>
+<div class="panel fade-in"><div class="img-placeholder" style="background:#B8B0A3"><div class="panel-overlay"><div class="panel-title">Decor</div><div class="panel-sub">Hand-selected from England</div></div></div></div>
+<div class="panel fade-in"><div class="img-placeholder" style="background:#ADA599"><div class="panel-overlay"><div class="panel-title">Staging</div><div class="panel-sub">Real estate & events</div></div></div></div>
+<div class="panel fade-in"><div class="img-placeholder" style="background:#9E968B"><div class="panel-overlay"><div class="panel-title">Rare Finds</div><div class="panel-sub">Special requests</div></div></div></div>
+</div>
+</div>
+<section id="contact" class="contact">
+<div class="contact-inner fade-in">
+<div class="section-eyebrow" style="margin-bottom:20px">Get in Touch</div>
+<h2>Let's create<br>something beautiful.</h2>
+<p>Whether you're building a new home, refreshing a room, or looking for that one perfect piece — we'd love to hear from you.</p>
+<a href="mailto:hello@cotswoldhouseco.com" class="contact-email">hello@cotswoldhouseco.com</a>
+<div class="contact-details">
+<div class="contact-detail"><div class="contact-detail-label">Location</div><div class="contact-detail-value">Greenville, South Carolina</div></div>
+<div class="contact-detail"><div class="contact-detail-label">Founded by</div><div class="contact-detail-value">Dani Wilkinson</div></div>
+<div class="contact-detail"><div class="contact-detail-label">Originally from</div><div class="contact-detail-value">The Cotswolds, England</div></div>
+</div>
+</div>
+</section>
+<div class="services">
+<div class="services-header">
+<div class="section-eyebrow" style="margin-bottom:20px">What We Do</div>
+<h2 class="section-title" style="margin-bottom:0">Four ways<br>we can help.</h2>
+</div>
+<div class="services-grid">
+<div class="service-card fade-in"><div class="service-num">i</div><div class="service-name">Interior Design</div><div class="service-desc">Room refreshes, renovations, and full custom home builds. Highly curated, detail-driven design.</div></div>
+<div class="service-card fade-in"><div class="service-num">ii</div><div class="service-name">Decor</div><div class="service-desc">Hand-selected items from the Cotswolds and across England. A piece of England in your home.</div></div>
+<div class="service-card fade-in"><div class="service-num">iii</div><div class="service-name">Staging</div><div class="service-desc">Curated decor and soft furnishings for residential real estate and events.</div></div>
+<div class="service-card fade-in"><div class="service-num">iv</div><div class="service-name">Rare Finds</div><div class="service-desc">Special requests welcome. Tell us what you're looking for and we'll source it from England.</div></div>
+</div>
+</div>
+<footer>
+<div class="footer-inner">
+<div class="footer-logo">Cotswold House Co.</div>
+<div class="footer-links">
+<a href="#design" class="footer-link">Interior Design</a>
+<a href="#decor" class="footer-link">Decor</a>
+<a href="#staging" class="footer-link">Staging</a>
+<a href="#rare" class="footer-link">Rare Finds</a>
+<a href="#contact" class="footer-link">Contact</a>
+<a href="#" class="footer-link">Instagram</a>
+<a href="#" class="footer-link">Shop</a>
+</div>
+<div class="footer-copy">&copy; 2026 Cotswold House Co. Greenville, SC</div>
+</div>
+</footer>
+<script>
+const nav=document.getElementById('nav');
+window.addEventListener('scroll',()=>{nav.classList.toggle('scrolled',window.scrollY>80)});
+const observer=new IntersectionObserver((entries)=>{
+entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');observer.unobserve(e.target)}})
+},{threshold:0.15,rootMargin:'0px 0px -40px 0px'});
+document.querySelectorAll('.fade-in').forEach(el=>observer.observe(el));
+document.querySelectorAll('a[href^="#"]').forEach(a=>{
+a.addEventListener('click',e=>{
+e.preventDefault();
+const t=document.querySelector(a.getAttribute('href'));
+if(t)t.scrollIntoView({behavior:'smooth',block:'start'});
+});
+});
+</script>
+</body>
+</html>
