@@ -1,0 +1,22 @@
+{
+  "name": "cotswold-house-co",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Cotswold House Co. — British-inspired interior design studio in Greenville, SC. Marketing site with Claude-powered design brief feature.",
+  "type": "module",
+  "scripts": {
+    "dev": "vercel dev --listen 3000",
+    "dev:static": "python3 -m http.server 8000",
+    "test": "node --test api/brief.test.mjs",
+    "deploy": "vercel --prod"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.30.1"
+  },
+  "devDependencies": {
+    "vercel": "^41.0.0"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}

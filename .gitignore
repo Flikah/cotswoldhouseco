@@ -1,1 +1,17 @@
 .vercel
+.env
+.env.local
+.env.*.local
+node_modules
+.DS_Store
+*.log
+
+# Local screenshots / Playwright artifacts
+.playwright-mcp/
+/hero-*.png
+/contact-*.png
+/shop-bibury*.png
+/three-ways-*.png
+/process.png
+/tracks.png
+/full-top.png
